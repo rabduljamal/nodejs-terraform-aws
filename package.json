@@ -1,0 +1,22 @@
+{
+  "name": "nodejs-terraform-aws",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rabduljamal/nodejs-terraform-aws.git"
+  },
+  "author": "rabduljamal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rabduljamal/nodejs-terraform-aws/issues"
+  },
+  "homepage": "https://github.com/rabduljamal/nodejs-terraform-aws#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
