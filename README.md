@@ -1,8 +1,8 @@
 # **NODEJS Deploy with Docker, ECR & ECS Cluster by R ABDUL JAMAL**
 
-#Requitments
+# Requitments
 
-- account fo AWS Console
+- account AWS Console
 - aws access_key = "xxxxxxxxxxx"
 - aws secret_key = "xxxxxxxxxxxxxx"
 - aws CLI with aws configure insert access key id & AWS Secret Access Key [read this turtorial](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html)
@@ -12,7 +12,7 @@
 
 1. change access_key & secret_key in deployment/provider.tf
 2. change repo_url image in deployment/fargate.tf format:
-  <ACCOUNT_ID>.dkr.ecr.ap-southeast-1.amazonaws.com/ecr_example_repo:latest
+<ACCOUNT_ID>.dkr.ecr.ap-southeast-1.amazonaws.com/ecr_example_repo:latest
 
 # Setup Deployment
 
