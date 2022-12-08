@@ -1,4 +1,4 @@
-# **NODEJS Deploy with ECR & ECS Cluster by R ABDUL JAMAL**
+# **NODEJS Deploy with Docker, ECR & ECS Cluster by R ABDUL JAMAL**
 
 #Requitments
 
@@ -11,7 +11,8 @@
 # Preparation
 
 1. change access_key & secret_key in deployment/provider.tf
-2. change repo_url image in deployment/fargate.tf format <ACCOUNT_ID>.dkr.ecr.ap-southeast-1.amazonaws.com/ecr_example_repo:latest
+2. change repo_url image in deployment/fargate.tf format:
+  <ACCOUNT_ID>.dkr.ecr.ap-southeast-1.amazonaws.com/ecr_example_repo:latest
 
 # Setup Deployment
 
@@ -35,7 +36,7 @@ docker build . -t nodejs-terraform-aws
 docker tag nodejs-terraform-aws:latest $ACCOUNT_ID.dkr.ecr.ap-southeast-1.amazonaws.com/ecr_example_repo:latest  
 
 # docker push image
-docker push 918456051637.dkr.ecr.ap-southeast-1.amazonaws.com/ecr_example_repo:latest  
+docker push $ACCOUNT_ID.dkr.ecr.ap-southeast-1.amazonaws.com/ecr_example_repo:latest  
 ```
 
 3. terraform deploy
